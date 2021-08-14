@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <link rel="stylesheet" href="calculadora.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Mi Calculadora</h1>
+
+    }
+    <script>
+        function myfun() {
+            var a = document.getElementById('number').value;
+            var b = document.getElementById('numbers').value;
+            document.getElementById('result').innerHTML = (a * b);
+        }
+
+        function myfun2() {
+            var a = document.getElementById('number').value;
+            var b = document.getElementById('numbers').value;
+            document.getElementById('result').innerHTML = (a / b);
+        }
+
+        function myfun3() {
+            var a = document.getElementById('number').value;
+            var b = document.getElementById('numbers').value;
+            document.getElementById('result').innerHTML = (a + b);
+        }
+
+        function myfun4() {
+            var a = document.getElementById('number').value;
+            var b = document.getElementById('numbers').value;
+            document.getElementById('result').innerHTML = (a - b);
+        }
+    </script>
+    Número 1:
+    <input type="number" value="" id="number"><br><br> Número 2:
+    <input type="number" value="" id="numbers"><br><br>
+    <input type="submit" value="Multiplicar" onclick="return myfun()">
+    <input type="submit" value="Dividir" onclick="return myfun2()">
+    <input type="submit" value="Sumar" onclick="return myfun3()">
+    <input type="submit" value="Restar" onclick="return myfun4()"><br><br>
+    <b>Mi resultado:</b>
+    <span id="result"></span>
+
+</body>
+
+</html>
